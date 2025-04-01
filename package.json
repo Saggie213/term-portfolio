@@ -1,0 +1,52 @@
+{
+  "name": "@saggie/terminal-portfolio",
+  "version": "1.0.1",
+  "description": "My Personal beautiful terminal-based portfolio display with interactive CLI interface.",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "terminal-portfolio": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "version:patch": "npm version patch && git push && git push --tags && npm publish --access public",
+    "version:minor": "npm version minor && git push && git push --tags && npm publish --access public",
+    "version:major": "npm version major && git push && git push --tags && npm publish --access public",
+    "publish:patch": "git add . && git commit -m \"patch update\" && npm run version:patch",
+    "publish:minor": "git add . && git commit -m \"minor update\" && npm run version:minor",
+    "publish:major": "git add . && git commit -m \"major update\" && npm run version:major"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saggie213/terminal-portfolio.git"
+  },
+  "keywords": [
+    "cli",
+    "terminal",
+    "portfolio",
+    "developer-portfolio",
+    "interactive",
+    "command-line",
+    "resume",
+    "profile",
+    "ascii-art",
+    "terminal-ui",
+    "developer-tools",
+    "npx",
+    "node-cli",
+    "terminal-portfolio",
+    "portfolio-generator"
+  ],
+  "author": {
+    "name": "Sougata Halder",
+    "email": "halderdk33@gmail.com",
+    "url": "https://github.com/Saggie213"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.12",
+    "boxen": "^7.1.1",
+    "figlet": "^1.7.0",
+    "clear": "^0.1.0"
+  }
+}
